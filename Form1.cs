@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace Logika
 {
+    
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            
         }
+
+        int _timer;
         void otkl()
         {
             radioButton1.Checked = false; //1
@@ -75,7 +79,7 @@ namespace Logika
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            _timer = 150;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -138,6 +142,8 @@ namespace Logika
             otkl();
             tabControl1.SelectedIndex = 0;
             timer1.Start();
+            _sec = 30;
+            _timer = 150;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -289,7 +295,9 @@ namespace Logika
             tabControl1.SelectedIndex = 0;
             button12.Visible = true;
             button10.Visible = true;
-
+            _sec = 30;
+            _timer = 150;
+            timer1.Start();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -305,12 +313,11 @@ namespace Logika
 
           
             
-            int _sec = 0;
-        int _timer = 150;
+            int _sec = 30;
+
        
         private void timer1_Tick(object sender, EventArgs e)
         {
-               
                 _timer -= 1;
                 if (_sec != 0)
                     _sec -= 1;
@@ -321,7 +328,7 @@ namespace Logika
                 {
                     _second = "0" + _second;
                 }
-               label15.Text = _sec.ToString();
+               label15.Text = _second.ToString();
                label14.Text = ((int)(_timer / 60)).ToString();
 
                 if (_timer == 0)
@@ -329,8 +336,6 @@ namespace Logika
                     timer1.Stop();//Конец времени
                     Finish();
                 }
-
-            
-        }
+       }
     }
 }
