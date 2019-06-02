@@ -137,6 +137,7 @@ namespace Logika
             tabControl1.Visible = true;
             otkl();
             tabControl1.SelectedIndex = 0;
+            timer1.Start();
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -180,7 +181,7 @@ namespace Logika
                 button10.Enabled = true; // иначе выкл
             }
         }
-        private void button13_Click_1(object sender, EventArgs e)
+        private void Finish()
         {
             button15.Visible = true;
             tabControl1.Visible = false; // выключаем всё возможное из теста
@@ -254,7 +255,7 @@ namespace Logika
             if (s < 5)
 
                 label2.ForeColor = Color.Red;
-            
+
             if (s < 5)
                 label2.Text = ("Зачет не сдан! Оценка: " + Convert.ToString(s));
 
@@ -264,7 +265,10 @@ namespace Logika
             if (s >= 3)
                 label2.Text = ("Зачёт сдан! Оценка: " + Convert.ToString(s));
 
-
+        }
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+            Finish();
         }
 
         private void button14_Click_1(object sender, EventArgs e)
@@ -299,11 +303,34 @@ namespace Logika
             Application.Exit();
         }
 
-        int T = 150;
-        
+          
+            
+            int _sec = 0;
+        int _timer = 150;
+       
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+               
+                _timer -= 1;
+                if (_sec != 0)
+                    _sec -= 1;
+                else
+                    _sec = 59;
+                string _second = _sec.ToString();
+                if (_sec < 10)
+                {
+                    _second = "0" + _second;
+                }
+               label15.Text = _sec.ToString();
+               label14.Text = ((int)(_timer / 60)).ToString();
+
+                if (_timer == 0)
+                {
+                    timer1.Stop();//Конец времени
+                    Finish();
+                }
+
+            
         }
     }
 }

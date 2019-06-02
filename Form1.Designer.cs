@@ -48,6 +48,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -115,9 +117,12 @@
             this.button10 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -383,7 +388,7 @@
             // panel1
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button15);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.label2);
@@ -398,6 +403,30 @@
             this.panel1.TabIndex = 15;
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Location = new System.Drawing.Point(424, 629);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(270, 68);
+            this.panel2.TabIndex = 8;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(66, 8);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(148, 18);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Осталось времени :";
             // 
             // button15
             // 
@@ -430,7 +459,7 @@
             this.tabControl1.Location = new System.Drawing.Point(10, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1069, 635);
+            this.tabControl1.Size = new System.Drawing.Size(1069, 611);
             this.tabControl1.TabIndex = 6;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -448,7 +477,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage1.Size = new System.Drawing.Size(1061, 585);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Вопрос 1";
             // 
@@ -458,7 +487,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackColor = System.Drawing.Color.Transparent;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton4.Location = new System.Drawing.Point(86, 463);
+            this.radioButton4.Location = new System.Drawing.Point(86, 455);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(100, 25, 3, 25);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(447, 40);
@@ -486,8 +515,8 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(86, 263);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(100, 45, 3, 45);
+            this.radioButton2.Location = new System.Drawing.Point(86, 295);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(100, 25, 3, 45);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(92, 40);
             this.radioButton2.TabIndex = 2;
@@ -500,7 +529,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(86, 153);
+            this.radioButton1.Location = new System.Drawing.Point(86, 205);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(100, 25, 3, 25);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(55, 40);
@@ -513,9 +542,9 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(-2, 48);
+            this.label3.Location = new System.Drawing.Point(-2, 64);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1063, 79);
+            this.label3.Size = new System.Drawing.Size(1063, 55);
             this.label3.TabIndex = 0;
             this.label3.Text = "Логическая операция инверсия соответствует логической связке  ";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -533,7 +562,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage2.Size = new System.Drawing.Size(1061, 585);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Вопрос 2";
             // 
@@ -543,7 +572,8 @@
             this.radioButton8.AutoSize = true;
             this.radioButton8.BackColor = System.Drawing.Color.Transparent;
             this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton8.Location = new System.Drawing.Point(181, 337);
+            this.radioButton8.Location = new System.Drawing.Point(86, 427);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(193, 40);
             this.radioButton8.TabIndex = 5;
@@ -556,7 +586,8 @@
             this.radioButton7.AutoSize = true;
             this.radioButton7.BackColor = System.Drawing.Color.Transparent;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton7.Location = new System.Drawing.Point(181, 286);
+            this.radioButton7.Location = new System.Drawing.Point(86, 359);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(377, 40);
             this.radioButton7.TabIndex = 4;
@@ -569,7 +600,8 @@
             this.radioButton6.AutoSize = true;
             this.radioButton6.BackColor = System.Drawing.Color.Transparent;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton6.Location = new System.Drawing.Point(181, 233);
+            this.radioButton6.Location = new System.Drawing.Point(86, 291);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(377, 40);
             this.radioButton6.TabIndex = 3;
@@ -582,7 +614,8 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.BackColor = System.Drawing.Color.Transparent;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton5.Location = new System.Drawing.Point(181, 179);
+            this.radioButton5.Location = new System.Drawing.Point(86, 223);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(363, 40);
             this.radioButton5.TabIndex = 2;
@@ -594,9 +627,9 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(65, 81);
+            this.label4.Location = new System.Drawing.Point(79, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(864, 85);
+            this.label4.Size = new System.Drawing.Size(864, 61);
             this.label4.TabIndex = 1;
             this.label4.Text = "Логическая операция конъюнкция иначе называется ";
             // 
@@ -612,7 +645,7 @@
             this.tabPage3.Controls.Add(this.radioButton9);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage3.Size = new System.Drawing.Size(1061, 585);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Вопрос 3";
             // 
@@ -621,9 +654,9 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(100, 87);
+            this.label5.Location = new System.Drawing.Point(128, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(830, 79);
+            this.label5.Size = new System.Drawing.Size(830, 55);
             this.label5.TabIndex = 6;
             this.label5.Text = "Логическая операция конъюнкция соответствует логической связке ";
             // 
@@ -633,7 +666,8 @@
             this.radioButton12.AutoSize = true;
             this.radioButton12.BackColor = System.Drawing.Color.Transparent;
             this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton12.Location = new System.Drawing.Point(242, 337);
+            this.radioButton12.Location = new System.Drawing.Point(86, 322);
+            this.radioButton12.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(71, 40);
             this.radioButton12.TabIndex = 5;
@@ -646,7 +680,8 @@
             this.radioButton11.AutoSize = true;
             this.radioButton11.BackColor = System.Drawing.Color.Transparent;
             this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton11.Location = new System.Drawing.Point(242, 269);
+            this.radioButton11.Location = new System.Drawing.Point(86, 254);
+            this.radioButton11.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(92, 40);
             this.radioButton11.TabIndex = 4;
@@ -659,7 +694,8 @@
             this.radioButton10.AutoSize = true;
             this.radioButton10.BackColor = System.Drawing.Color.Transparent;
             this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton10.Location = new System.Drawing.Point(242, 201);
+            this.radioButton10.Location = new System.Drawing.Point(86, 186);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(55, 40);
             this.radioButton10.TabIndex = 3;
@@ -672,7 +708,8 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.BackColor = System.Drawing.Color.Transparent;
             this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton9.Location = new System.Drawing.Point(242, 405);
+            this.radioButton9.Location = new System.Drawing.Point(86, 390);
+            this.radioButton9.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(447, 40);
             this.radioButton9.TabIndex = 2;
@@ -691,7 +728,7 @@
             this.tabPage4.Controls.Add(this.radioButton13);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage4.Size = new System.Drawing.Size(1061, 585);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Вопрос 4";
             // 
@@ -712,7 +749,8 @@
             this.radioButton16.AutoSize = true;
             this.radioButton16.BackColor = System.Drawing.Color.Transparent;
             this.radioButton16.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton16.Location = new System.Drawing.Point(187, 368);
+            this.radioButton16.Location = new System.Drawing.Point(86, 439);
+            this.radioButton16.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton16.Name = "radioButton16";
             this.radioButton16.Size = new System.Drawing.Size(288, 40);
             this.radioButton16.TabIndex = 7;
@@ -725,7 +763,8 @@
             this.radioButton15.AutoSize = true;
             this.radioButton15.BackColor = System.Drawing.Color.Transparent;
             this.radioButton15.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton15.Location = new System.Drawing.Point(187, 315);
+            this.radioButton15.Location = new System.Drawing.Point(86, 371);
+            this.radioButton15.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(377, 40);
             this.radioButton15.TabIndex = 6;
@@ -738,7 +777,8 @@
             this.radioButton14.AutoSize = true;
             this.radioButton14.BackColor = System.Drawing.Color.Transparent;
             this.radioButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton14.Location = new System.Drawing.Point(187, 258);
+            this.radioButton14.Location = new System.Drawing.Point(86, 303);
+            this.radioButton14.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(385, 40);
             this.radioButton14.TabIndex = 5;
@@ -751,7 +791,8 @@
             this.radioButton13.AutoSize = true;
             this.radioButton13.BackColor = System.Drawing.Color.Transparent;
             this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton13.Location = new System.Drawing.Point(187, 208);
+            this.radioButton13.Location = new System.Drawing.Point(86, 235);
+            this.radioButton13.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(363, 40);
             this.radioButton13.TabIndex = 4;
@@ -770,7 +811,7 @@
             this.tabPage5.Controls.Add(this.label7);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage5.Size = new System.Drawing.Size(1061, 585);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Вопрос 5";
             // 
@@ -780,7 +821,8 @@
             this.radioButton20.AutoSize = true;
             this.radioButton20.BackColor = System.Drawing.Color.Transparent;
             this.radioButton20.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton20.Location = new System.Drawing.Point(111, 366);
+            this.radioButton20.Location = new System.Drawing.Point(86, 445);
+            this.radioButton20.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Size = new System.Drawing.Size(449, 40);
             this.radioButton20.TabIndex = 13;
@@ -794,7 +836,8 @@
             this.radioButton19.AutoSize = true;
             this.radioButton19.BackColor = System.Drawing.Color.Transparent;
             this.radioButton19.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton19.Location = new System.Drawing.Point(111, 322);
+            this.radioButton19.Location = new System.Drawing.Point(86, 377);
+            this.radioButton19.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton19.Name = "radioButton19";
             this.radioButton19.Size = new System.Drawing.Size(198, 40);
             this.radioButton19.TabIndex = 12;
@@ -808,7 +851,8 @@
             this.radioButton18.AutoSize = true;
             this.radioButton18.BackColor = System.Drawing.Color.Transparent;
             this.radioButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton18.Location = new System.Drawing.Point(111, 276);
+            this.radioButton18.Location = new System.Drawing.Point(86, 309);
+            this.radioButton18.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton18.Name = "radioButton18";
             this.radioButton18.Size = new System.Drawing.Size(92, 40);
             this.radioButton18.TabIndex = 11;
@@ -822,7 +866,8 @@
             this.radioButton17.AutoSize = true;
             this.radioButton17.BackColor = System.Drawing.Color.Transparent;
             this.radioButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton17.Location = new System.Drawing.Point(111, 230);
+            this.radioButton17.Location = new System.Drawing.Point(86, 241);
+            this.radioButton17.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton17.Name = "radioButton17";
             this.radioButton17.Size = new System.Drawing.Size(55, 40);
             this.radioButton17.TabIndex = 10;
@@ -835,9 +880,9 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(128, 116);
+            this.label7.Location = new System.Drawing.Point(3, 48);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(813, 79);
+            this.label7.Size = new System.Drawing.Size(1055, 79);
             this.label7.TabIndex = 9;
             this.label7.Text = "Логическая операция дизъюнкция соответствует логической связке ";
             // 
@@ -853,7 +898,7 @@
             this.tabPage6.Controls.Add(this.radioButton21);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage6.Size = new System.Drawing.Size(1061, 585);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Вопрос 6";
             // 
@@ -861,10 +906,10 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(82, 87);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(3, 87);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(892, 79);
+            this.label8.Size = new System.Drawing.Size(1058, 79);
             this.label8.TabIndex = 15;
             this.label8.Text = "Сложное  высказывание,  которое  ложно,  когда  простое  высказывание истинно, и " +
     "наоборот, называется ";
@@ -874,10 +919,11 @@
             this.radioButton24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton24.AutoSize = true;
             this.radioButton24.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton24.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton24.Location = new System.Drawing.Point(214, 383);
+            this.radioButton24.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton24.Location = new System.Drawing.Point(100, 445);
+            this.radioButton24.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(187, 33);
+            this.radioButton24.Size = new System.Drawing.Size(227, 40);
             this.radioButton24.TabIndex = 14;
             this.radioButton24.Text = "Импликация ";
             this.radioButton24.UseVisualStyleBackColor = false;
@@ -887,10 +933,11 @@
             this.radioButton23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton23.AutoSize = true;
             this.radioButton23.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton23.Location = new System.Drawing.Point(214, 337);
+            this.radioButton23.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton23.Location = new System.Drawing.Point(100, 377);
+            this.radioButton23.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(208, 33);
+            this.radioButton23.Size = new System.Drawing.Size(251, 40);
             this.radioButton23.TabIndex = 13;
             this.radioButton23.Text = "Эквиваленция ";
             this.radioButton23.UseVisualStyleBackColor = false;
@@ -900,10 +947,11 @@
             this.radioButton22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton22.AutoSize = true;
             this.radioButton22.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton22.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton22.Location = new System.Drawing.Point(214, 286);
+            this.radioButton22.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton22.Location = new System.Drawing.Point(100, 309);
+            this.radioButton22.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(146, 33);
+            this.radioButton22.Size = new System.Drawing.Size(173, 40);
             this.radioButton22.TabIndex = 12;
             this.radioButton22.Text = "Инверсия";
             this.radioButton22.UseVisualStyleBackColor = false;
@@ -913,10 +961,11 @@
             this.radioButton21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton21.AutoSize = true;
             this.radioButton21.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton21.Location = new System.Drawing.Point(214, 230);
+            this.radioButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton21.Location = new System.Drawing.Point(100, 241);
+            this.radioButton21.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(179, 33);
+            this.radioButton21.Size = new System.Drawing.Size(212, 40);
             this.radioButton21.TabIndex = 11;
             this.radioButton21.Text = "Конъюнкция";
             this.radioButton21.UseVisualStyleBackColor = false;
@@ -933,7 +982,7 @@
             this.tabPage7.Controls.Add(this.label9);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage7.Size = new System.Drawing.Size(1061, 585);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Вопрос 7";
             // 
@@ -942,10 +991,11 @@
             this.radioButton28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton28.AutoSize = true;
             this.radioButton28.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton28.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton28.Location = new System.Drawing.Point(117, 356);
+            this.radioButton28.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton28.Location = new System.Drawing.Point(100, 429);
+            this.radioButton28.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton28.Name = "radioButton28";
-            this.radioButton28.Size = new System.Drawing.Size(352, 33);
+            this.radioButton28.Size = new System.Drawing.Size(449, 40);
             this.radioButton28.TabIndex = 20;
             this.radioButton28.TabStop = true;
             this.radioButton28.Text = "Тогда и только тогда, когда";
@@ -956,10 +1006,11 @@
             this.radioButton27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton27.AutoSize = true;
             this.radioButton27.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton27.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton27.Location = new System.Drawing.Point(117, 304);
+            this.radioButton27.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton27.Location = new System.Drawing.Point(100, 361);
+            this.radioButton27.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(139, 33);
+            this.radioButton27.Size = new System.Drawing.Size(169, 40);
             this.radioButton27.TabIndex = 19;
             this.radioButton27.TabStop = true;
             this.radioButton27.Text = "Если, то  ";
@@ -970,10 +1021,11 @@
             this.radioButton26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton26.AutoSize = true;
             this.radioButton26.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton26.Location = new System.Drawing.Point(117, 247);
+            this.radioButton26.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton26.Location = new System.Drawing.Point(99, 293);
+            this.radioButton26.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(79, 33);
+            this.radioButton26.Size = new System.Drawing.Size(92, 40);
             this.radioButton26.TabIndex = 18;
             this.radioButton26.TabStop = true;
             this.radioButton26.Text = "Или";
@@ -984,10 +1036,11 @@
             this.radioButton25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton25.AutoSize = true;
             this.radioButton25.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton25.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton25.Location = new System.Drawing.Point(117, 190);
+            this.radioButton25.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton25.Location = new System.Drawing.Point(99, 225);
+            this.radioButton25.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(62, 33);
+            this.radioButton25.Size = new System.Drawing.Size(71, 40);
             this.radioButton25.TabIndex = 17;
             this.radioButton25.TabStop = true;
             this.radioButton25.Text = "Не";
@@ -997,10 +1050,10 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(17, 97);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(3, 50);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(1038, 79);
+            this.label9.Size = new System.Drawing.Size(1055, 79);
             this.label9.TabIndex = 16;
             this.label9.Text = "Логическая операция эквиваленция соответствует логической связке";
             // 
@@ -1016,7 +1069,7 @@
             this.tabPage8.Controls.Add(this.label10);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage8.Size = new System.Drawing.Size(1061, 585);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Вопрос 8";
             // 
@@ -1025,10 +1078,11 @@
             this.radioButton30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton30.AutoSize = true;
             this.radioButton30.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton30.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton30.Location = new System.Drawing.Point(156, 276);
+            this.radioButton30.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton30.Location = new System.Drawing.Point(95, 262);
+            this.radioButton30.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton30.Name = "radioButton30";
-            this.radioButton30.Size = new System.Drawing.Size(306, 33);
+            this.radioButton30.Size = new System.Drawing.Size(377, 40);
             this.radioButton30.TabIndex = 22;
             this.radioButton30.Text = "Логическое умножение";
             this.radioButton30.UseVisualStyleBackColor = false;
@@ -1038,10 +1092,11 @@
             this.radioButton32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton32.AutoSize = true;
             this.radioButton32.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton32.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton32.Location = new System.Drawing.Point(156, 383);
+            this.radioButton32.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton32.Location = new System.Drawing.Point(88, 405);
+            this.radioButton32.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton32.Name = "radioButton32";
-            this.radioButton32.Size = new System.Drawing.Size(175, 33);
+            this.radioButton32.Size = new System.Drawing.Size(209, 40);
             this.radioButton32.TabIndex = 21;
             this.radioButton32.Text = "Отрицание  ";
             this.radioButton32.UseVisualStyleBackColor = false;
@@ -1051,10 +1106,11 @@
             this.radioButton31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton31.AutoSize = true;
             this.radioButton31.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton31.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton31.Location = new System.Drawing.Point(156, 327);
+            this.radioButton31.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton31.Location = new System.Drawing.Point(88, 337);
+            this.radioButton31.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton31.Name = "radioButton31";
-            this.radioButton31.Size = new System.Drawing.Size(295, 33);
+            this.radioButton31.Size = new System.Drawing.Size(363, 40);
             this.radioButton31.TabIndex = 20;
             this.radioButton31.Text = "Логическое сложение ";
             this.radioButton31.UseVisualStyleBackColor = false;
@@ -1064,10 +1120,11 @@
             this.radioButton29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton29.AutoSize = true;
             this.radioButton29.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton29.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton29.Location = new System.Drawing.Point(156, 224);
+            this.radioButton29.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton29.Location = new System.Drawing.Point(95, 194);
+            this.radioButton29.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton29.Name = "radioButton29";
-            this.radioButton29.Size = new System.Drawing.Size(313, 33);
+            this.radioButton29.Size = new System.Drawing.Size(377, 40);
             this.radioButton29.TabIndex = 18;
             this.radioButton29.Text = "Условное предложение";
             this.radioButton29.UseVisualStyleBackColor = false;
@@ -1076,10 +1133,10 @@
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(124, 108);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(81, 41);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(798, 79);
+            this.label10.Size = new System.Drawing.Size(875, 79);
             this.label10.TabIndex = 17;
             this.label10.Text = "Логическая операция импликация иначе называется  ";
             // 
@@ -1095,7 +1152,7 @@
             this.tabPage9.Controls.Add(this.label11);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage9.Size = new System.Drawing.Size(1061, 585);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Вопрос 9";
             // 
@@ -1104,10 +1161,11 @@
             this.radioButton34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton34.AutoSize = true;
             this.radioButton34.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton34.Location = new System.Drawing.Point(122, 234);
+            this.radioButton34.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton34.Location = new System.Drawing.Point(86, 337);
+            this.radioButton34.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton34.Name = "radioButton34";
-            this.radioButton34.Size = new System.Drawing.Size(177, 33);
+            this.radioButton34.Size = new System.Drawing.Size(218, 40);
             this.radioButton34.TabIndex = 23;
             this.radioButton34.Text = "Дизьюнкция";
             this.radioButton34.UseVisualStyleBackColor = false;
@@ -1117,10 +1175,11 @@
             this.radioButton36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton36.AutoSize = true;
             this.radioButton36.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton36.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton36.Location = new System.Drawing.Point(122, 358);
+            this.radioButton36.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton36.Location = new System.Drawing.Point(86, 473);
+            this.radioButton36.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton36.Name = "radioButton36";
-            this.radioButton36.Size = new System.Drawing.Size(178, 33);
+            this.radioButton36.Size = new System.Drawing.Size(215, 40);
             this.radioButton36.TabIndex = 22;
             this.radioButton36.TabStop = true;
             this.radioButton36.Text = "импликация";
@@ -1131,10 +1190,11 @@
             this.radioButton35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton35.AutoSize = true;
             this.radioButton35.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton35.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton35.Location = new System.Drawing.Point(122, 295);
+            this.radioButton35.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton35.Location = new System.Drawing.Point(86, 405);
+            this.radioButton35.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton35.Name = "radioButton35";
-            this.radioButton35.Size = new System.Drawing.Size(198, 33);
+            this.radioButton35.Size = new System.Drawing.Size(237, 40);
             this.radioButton35.TabIndex = 21;
             this.radioButton35.TabStop = true;
             this.radioButton35.Text = "эквиваленция";
@@ -1145,10 +1205,11 @@
             this.radioButton33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton33.AutoSize = true;
             this.radioButton33.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton33.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton33.Location = new System.Drawing.Point(122, 179);
+            this.radioButton33.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton33.Location = new System.Drawing.Point(86, 269);
+            this.radioButton33.Margin = new System.Windows.Forms.Padding(100, 25, 3, 3);
             this.radioButton33.Name = "radioButton33";
-            this.radioButton33.Size = new System.Drawing.Size(149, 33);
+            this.radioButton33.Size = new System.Drawing.Size(177, 40);
             this.radioButton33.TabIndex = 19;
             this.radioButton33.Text = "инверсия ";
             this.radioButton33.UseVisualStyleBackColor = false;
@@ -1157,10 +1218,10 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(16, 73);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(3, 73);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1042, 79);
+            this.label11.Size = new System.Drawing.Size(1055, 79);
             this.label11.TabIndex = 18;
             this.label11.Text = "Сложное высказывание, которое ложно, когда составляющие высказывания принимают ра" +
     "зные значения истинности, называется ";
@@ -1175,7 +1236,7 @@
             this.tabPage10.Controls.Add(this.label12);
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1061, 609);
+            this.tabPage10.Size = new System.Drawing.Size(1061, 585);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Вопрос 10";
             // 
@@ -1183,7 +1244,7 @@
             // 
             this.button14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button14.Location = new System.Drawing.Point(579, 254);
+            this.button14.Location = new System.Drawing.Point(650, 254);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(134, 76);
             this.button14.TabIndex = 20;
@@ -1195,7 +1256,7 @@
             // 
             this.button13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button13.Location = new System.Drawing.Point(344, 254);
+            this.button13.Location = new System.Drawing.Point(272, 254);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(134, 76);
             this.button13.TabIndex = 19;
@@ -1208,7 +1269,7 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(252, 120);
+            this.label12.Location = new System.Drawing.Point(223, 62);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(626, 57);
             this.label12.TabIndex = 18;
@@ -1293,18 +1354,39 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label13
+            // label14
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(470, 657);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 31);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "00:00";
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(95, 30);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(36, 25);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "00";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(125, 30);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(18, 25);
+            this.label16.TabIndex = 3;
+            this.label16.Text = ":";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(137, 30);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 25);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "00";
             // 
             // Form1
             // 
@@ -1333,6 +1415,8 @@
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1445,8 +1529,12 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
     }
 }
 
